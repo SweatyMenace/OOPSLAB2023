@@ -1,4 +1,4 @@
-package week10.Q1;
+package Q1;
 
 class Person {
     private String name;
