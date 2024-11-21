@@ -41,6 +41,14 @@ class FindShow {
         }
         return false;
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true; // Check for reference equality
+        if (obj == null || getClass() != obj.getClass()) return false; // Check for null and class type
+        Show show = (Show) obj; // Cast to Show
+        return Double.compare(show.cost, cost) == 0 && name.equals(show.name); // Compare name and cost
+    }
 }
 
 public class ShowFinder {
